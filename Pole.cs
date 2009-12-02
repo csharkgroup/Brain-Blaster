@@ -6,17 +6,15 @@ using OpenGL;
 
 namespace GameClient
 {
-    class Pole
+ interface Pole
     {
-        public virtual void Draw(int x, int y)
-        {
-
-        }
+     void Draw(int x, int y);
+        
     }
 
     class Skala : Pole
     {
-        public virtual void Draw(int x, int y)
+        public void Draw(int x, int y)
         {
             GL.glBegin(GL.GL_LINES);
             GL.glVertex2i(x * 32    , y * 32);

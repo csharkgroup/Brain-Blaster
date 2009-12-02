@@ -6,3 +6,11 @@ C:\Users\Jacek\Desktop\GC\GameClient\bin\Debug\GameClient.pdb
 C:\Users\Jacek\Desktop\GC\GameClient\obj\Debug\GameClient.exe
 C:\Users\Jacek\Desktop\GC\GameClient\obj\Debug\GameClient.pdb
 C:\Users\Jacek\Desktop\GC\GameClient\obj\Debug\GameClient.Form1.resources
+C:\Users\Marek\Brain-Blaster\obj\Debug\GameClient.exe
+C:\Users\Marek\Brain-Blaster\obj\Debug\GameClient.pdb
+C:\Users\Marek\Brain-Blaster\bin\Debug\GameClient.exe
+C:\Users\Marek\Brain-Blaster\bin\Debug\GameClient.pdb
+C:\Users\Marek\Brain-Blaster\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Marek\Brain-Blaster\obj\Debug\GameClient.Form1.resources
+C:\Users\Marek\Brain-Blaster\obj\Debug\GameClient.Properties.Resources.resources
+C:\Users\Marek\Brain-Blaster\obj\Debug\GameClient.csproj.GenerateResource.Cache
