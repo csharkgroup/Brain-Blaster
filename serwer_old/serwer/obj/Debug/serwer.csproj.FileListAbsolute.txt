@@ -1,0 +1,24 @@
+D:\Moje Dokumenty\Visual Studio 2008\Projects\serwer\serwer\bin\Debug\serwer.exe
+D:\Moje Dokumenty\Visual Studio 2008\Projects\serwer\serwer\bin\Debug\serwer.pdb
+D:\Moje Dokumenty\Visual Studio 2008\Projects\serwer\serwer\obj\Debug\ResolveAssemblyReference.cache
+D:\Moje Dokumenty\Visual Studio 2008\Projects\serwer\serwer\obj\Debug\serwer.Form1.resources
+D:\Moje Dokumenty\Visual Studio 2008\Projects\serwer\serwer\obj\Debug\serwer.Properties.Resources.resources
+D:\Moje Dokumenty\Visual Studio 2008\Projects\serwer\serwer\obj\Debug\serwer.csproj.GenerateResource.Cache
+D:\Moje Dokumenty\Visual Studio 2008\Projects\serwer\serwer\obj\Debug\serwer.exe
+D:\Moje Dokumenty\Visual Studio 2008\Projects\serwer\serwer\obj\Debug\serwer.pdb
+C:\Documents and Settings\batas2\Pulpit\Projects\serwer\serwer\obj\Debug\serwer.exe
+C:\Documents and Settings\batas2\Pulpit\Projects\serwer\serwer\obj\Debug\serwer.pdb
+C:\Documents and Settings\batas2\Pulpit\Projects\serwer\serwer\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\batas2\Pulpit\Projects\serwer\serwer\obj\Debug\serwer.Form1.resources
+C:\Documents and Settings\batas2\Pulpit\Projects\serwer\serwer\obj\Debug\serwer.Properties.Resources.resources
+C:\Documents and Settings\batas2\Pulpit\Projects\serwer\serwer\obj\Debug\serwer.csproj.GenerateResource.Cache
+C:\Documents and Settings\batas2\Pulpit\Projects\serwer\serwer\bin\Debug\serwer.exe
+C:\Documents and Settings\batas2\Pulpit\Projects\serwer\serwer\bin\Debug\serwer.pdb
+D:\Moje Dokumenty\Visual Studio 2008\Projects\Brain-Blaster\serwer_old\serwer\bin\Debug\serwer.exe
+D:\Moje Dokumenty\Visual Studio 2008\Projects\Brain-Blaster\serwer_old\serwer\bin\Debug\serwer.pdb
+D:\Moje Dokumenty\Visual Studio 2008\Projects\Brain-Blaster\serwer_old\serwer\obj\Debug\ResolveAssemblyReference.cache
+D:\Moje Dokumenty\Visual Studio 2008\Projects\Brain-Blaster\serwer_old\serwer\obj\Debug\serwer.Form1.resources
+D:\Moje Dokumenty\Visual Studio 2008\Projects\Brain-Blaster\serwer_old\serwer\obj\Debug\serwer.Properties.Resources.resources
+D:\Moje Dokumenty\Visual Studio 2008\Projects\Brain-Blaster\serwer_old\serwer\obj\Debug\serwer.csproj.GenerateResource.Cache
+D:\Moje Dokumenty\Visual Studio 2008\Projects\Brain-Blaster\serwer_old\serwer\obj\Debug\serwer.exe
+D:\Moje Dokumenty\Visual Studio 2008\Projects\Brain-Blaster\serwer_old\serwer\obj\Debug\serwer.pdb
