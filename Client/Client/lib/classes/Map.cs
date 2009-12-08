@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using System.Net;
 using System.Net.Sockets;
 
+using Client.etc;
 using Client.lib.interfaces;
 
 namespace Client.lib.classes
@@ -12,32 +13,30 @@ namespace Client.lib.classes
     public class Map : IObject
     {
         public Player[] Players { get; set; }
+        public int Index { get; set; }
+
+        #region Do usuniecia
         public DataGridView _Map { get; set; } //Do usuniecia
-
-        public int Index 
-        { 
-            get;
-            set;
-        }
-
-        private int _maxPlayers; //Do usuniecia
         private bool _firtRender; //Do usuniecia robi X na pozycjach
 
-        public Map(int MaxPlayers, DataGridView Map)
+        public void _setMap(DataGridView Map)
         {
-            Players = new Player[MaxPlayers];
+            _Map = Map;
+        }
+        #endregion
 
-            _maxPlayers = MaxPlayers;
-            _firtRender = true;
-
+        public Map()
+        {
+            Players = new Player[Setting.Map.MaxPlayers];
             Index = 0;
 
-            _Map = Map;
+            _firtRender = true;
+
         }
 
         public void AddPlayer(Player Player)
         {
-            if (Index < _maxPlayers)
+            if (Index < Setting.Map.MaxPlayers)
             {
                 Player.Index = Index;
                 Players[Index++] = Player;

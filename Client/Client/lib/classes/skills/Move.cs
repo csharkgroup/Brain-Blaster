@@ -20,7 +20,7 @@ namespace Client.lib.classes.skills
             set;
         }
 
-        public void Action(Player Player, Keys k)
+        public string[] Translate(Player Player, System.Windows.Forms.Keys k)
         {
             int x, y;
 
@@ -40,7 +40,9 @@ namespace Client.lib.classes.skills
                 Player.X = x;
                 Player.Y = y;
             }
-            Player.WriteS.Write(MsgC.Move + "|" + Player.Index.ToString() + "|" + Player.X.ToString() + "|" + Player.Y.ToString());            
+            
+            Player.WriteS.Write(MsgC.Move + "|" + Player.Index.ToString() + "|" + Player.X.ToString() + "|" + Player.Y.ToString());
+            return new string[] { "", Player.Index.ToString(), Player.X.ToString(), Player.Y.ToString() };
         }
 
         public void Action(Player Player, string[] cmd)

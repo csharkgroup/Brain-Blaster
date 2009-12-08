@@ -57,7 +57,7 @@ namespace Client.lib.classes.skills
             }
         }
 
-        public void Action(Player Player, System.Windows.Forms.Keys k)
+        public string[] Translate(Player Player, System.Windows.Forms.Keys k)
         {
             throw new NotImplementedException();
         }

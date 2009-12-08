@@ -17,7 +17,7 @@ namespace Client.lib.classes
     public class Player : IObject, IField
     {
 
-        public RichTextBox txtLog{get; set;}
+        public RichTextBox txtLog { get; set; }
         public Form Form { get; set; }
 
         public string Nick;
@@ -31,7 +31,7 @@ namespace Client.lib.classes
         private Thread _readT = null;
 
         public int Index { get; set; }
-        
+
         public Player(Map Map)
         {
             this.Map = Map;
@@ -39,9 +39,9 @@ namespace Client.lib.classes
 
         #region IField Members
 
-        public int X{get;set;}
+        public int X { get; set; }
 
-        public int Y{get;set;}
+        public int Y { get; set; }
 
         #endregion
 

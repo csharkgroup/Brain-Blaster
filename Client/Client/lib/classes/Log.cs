@@ -40,8 +40,8 @@ namespace Client.lib.classes
             {
                 string s = base.ReadString();
 
-                _lastString = s; //Do wywalenia
-                Add(s);  //Do wywalenia
+                _lastString = "<<" + s; //Do wywalenia
+                Add("<<" + s);  //Do wywalenia
 
                 ReadLog.Add(s);
 
@@ -132,8 +132,8 @@ namespace Client.lib.classes
         //Tutaj przeciazam
         public override void Write(string value)
         {
-            _lastString = value; //Do wywalenia
-            //Add(value); //Do wywalnie
+            _lastString = ">>" + value; //Do wywalenia
+            Add(">>" + value); //Do wywalnie
 
             WriteLog.Add(value);
             base.Write(value);

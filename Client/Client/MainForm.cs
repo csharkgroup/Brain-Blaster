@@ -19,6 +19,7 @@ using Client.lib.interfaces;
 namespace Client
 {
     //TODO Przeciazanie strumieni wszystkie _setLog i metody "do usuniecia" WON!!!
+    //Serio tam jest taaaki syf
     //TODO Formatowanie kodu i komentarze
 
     //BUG cos player nie chce sie renderowac na poczatku
@@ -32,9 +33,12 @@ namespace Client
         {
             InitializeComponent();
 
-            Log._SetDest(logTxt, this); //Do wywalenia
+            _map = new Map();
 
-            _map = new Map(Setting.Map.MaxPlayers, tmpMap);
+            #region do wywalenia
+            Log._SetDest(logTxt, this); //Do wywalenia
+            _map._Map = tmpMap; //Do wywalenia
+            #endregion
 
         }
 
@@ -57,7 +61,7 @@ namespace Client
             {
                 Log.Add("Połączono!");
 
-                #region Tworzenie kolumn i wierszy tego tam komponentu niby do mapy
+                #region Tworzenie kolumn i wierszy tego tam komponentu niby do mapy Tez do wywalenia
 
                 for (int i = 0; i < Setting.Map.MaxX; i++)
                 {
@@ -95,7 +99,7 @@ namespace Client
             ISkill o = (ISkill)Skill.List[MsgS.Move];
 
             _player.Clear();
-            o.Action(_player, e.KeyCode);
+            o.Action(_player, o.Translate(_player, e.KeyCode)); //khem khem, czy to bedzie dobre?!?! czy to znowu pisanie na okolo
             _player.Render();
         }
 

@@ -48,6 +48,7 @@ namespace Client.lib.classes
 
         }
 
+        //Nie wiem czy to potrzebne
         Skill()
         {
 

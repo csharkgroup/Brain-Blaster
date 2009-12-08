@@ -67,7 +67,6 @@
     <Compile Include="lib\classes\Log.cs" />
     <Compile Include="lib\classes\Map.cs" />
     <Compile Include="lib\classes\Player.cs" />
-    <Compile Include="lib\classes\Timer.cs" />
     <Compile Include="lib\interfaces\IField.cs" />
     <Compile Include="lib\interfaces\IObject.cs" />
     <Compile Include="lib\interfaces\IPlugin.cs" />
