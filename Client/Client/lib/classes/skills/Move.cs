@@ -20,7 +20,7 @@ namespace Client.lib.classes.skills
             set;
         }
 
-        public string[] Translate(Player Player, System.Windows.Forms.Keys k)
+        public void Action(Player Player, System.Windows.Forms.Keys k)
         {
             int x, y;
 
@@ -29,20 +29,17 @@ namespace Client.lib.classes.skills
 
             switch (k)
             {
-                case Keys.Left: x += x == 0 ? 0 : -1; break;
-                case Keys.Right: x += x == 32 ? 0 : 1; break;
-                case Keys.Up: y += y == 0 ? 0 : -1; break;
-                case Keys.Down: y += y == 18 ? 0 : 1; break;
+                case Keys.Left: x -= x > 0 ? 1 : 0; break;
+                case Keys.Right: x += x < Setting.Map.MaxX ? 1 : 0; break;
+                case Keys.Up: y -= y > 0 ? 1 : 0; break;
+                case Keys.Down: y += y < Setting.Map.MaxY ? 1 : 0; break;
             }
 
             if (!(x % 2 == 1 && y % 2 == 1))
             {
-                Player.X = x;
-                Player.Y = y;
+                Player.WriteS.Write(MsgC.Move + "|" + Player.Index.ToString() + "|" + x.ToString() + "|" + y.ToString());
             }
             
-            Player.WriteS.Write(MsgC.Move + "|" + Player.Index.ToString() + "|" + Player.X.ToString() + "|" + Player.Y.ToString());
-            return new string[] { "", Player.Index.ToString(), Player.X.ToString(), Player.Y.ToString() };
         }
 
         public void Action(Player Player, string[] cmd)

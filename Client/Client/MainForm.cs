@@ -40,6 +40,8 @@ namespace Client
             _map._Map = tmpMap; //Do wywalenia
             #endregion
 
+
+
         }
 
         private void btnConnect_Click(object sender, EventArgs e)
@@ -63,7 +65,7 @@ namespace Client
 
                 #region Tworzenie kolumn i wierszy tego tam komponentu niby do mapy Tez do wywalenia
 
-                for (int i = 0; i < Setting.Map.MaxX; i++)
+                for (int i = 0; i <= Setting.Map.MaxX; i++)
                 {
                     tmpMap.Columns.Add(i.ToString(), i.ToString());
                     tmpMap.Columns[i].Width = Setting.Field.Width;
@@ -96,11 +98,13 @@ namespace Client
 
         private void tmpMap_KeyDown(object sender, KeyEventArgs e)
         {
-            ISkill o = (ISkill)Skill.List[MsgS.Move];
+            ISkill o = (ISkill)Skill.List["KeyPress"];
+            o.Action(_player, e.KeyCode); //khem khem, czy to bedzie dobre?!?! czy to znowu pisanie na okolo
+        }
 
-            _player.Clear();
-            o.Action(_player, o.Translate(_player, e.KeyCode)); //khem khem, czy to bedzie dobre?!?! czy to znowu pisanie na okolo
-            _player.Render();
+        private void MainForm_Resize(object sender, EventArgs e)
+        {
+            Text =  Width.ToString() + Height.ToString();
         }
 
     }

@@ -51,13 +51,13 @@ namespace Client.lib.classes.skills
                     break;
                 case MsgS.GetNick:
                     Player.Map.Players[Index].Nick = cmd[2];
-                    Player.Map.Players[Index].Render();
+                    Player.Map.Render();
                     break;
 
             }
         }
 
-        public string[] Translate(Player Player, System.Windows.Forms.Keys k)
+        public void Action(Player Player, System.Windows.Forms.Keys k)
         {
             throw new NotImplementedException();
         }

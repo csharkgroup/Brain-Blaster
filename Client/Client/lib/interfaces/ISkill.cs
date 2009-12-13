@@ -15,7 +15,7 @@ namespace Client.lib.interfaces
             set;
         }
 
-        string[] Translate(Player Player, System.Windows.Forms.Keys k);
+        void Action(Player Player, System.Windows.Forms.Keys k);
 
         void Action(Player Player, string[] cmd);
     }

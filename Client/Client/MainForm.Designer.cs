@@ -31,14 +31,14 @@
             this.tmpMap = new System.Windows.Forms.DataGridView();
             this.logTxt = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.TxtNick = new System.Windows.Forms.TextBox();
             this.btnDisconnect = new System.Windows.Forms.Button();
             this.btnConnect = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtPort = new System.Windows.Forms.TextBox();
             this.txtHost = new System.Windows.Forms.TextBox();
-            this.TxtNick = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tmpMap)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -53,7 +53,7 @@
             this.tmpMap.MultiSelect = false;
             this.tmpMap.Name = "tmpMap";
             this.tmpMap.ReadOnly = true;
-            this.tmpMap.Size = new System.Drawing.Size(704, 425);
+            this.tmpMap.Size = new System.Drawing.Size(703, 405);
             this.tmpMap.TabIndex = 0;
             this.tmpMap.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tmpMap_KeyDown);
             // 
@@ -61,9 +61,9 @@
             // 
             this.logTxt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.logTxt.Location = new System.Drawing.Point(12, 443);
+            this.logTxt.Location = new System.Drawing.Point(12, 423);
             this.logTxt.Name = "logTxt";
-            this.logTxt.Size = new System.Drawing.Size(704, 96);
+            this.logTxt.Size = new System.Drawing.Size(703, 96);
             this.logTxt.TabIndex = 1;
             this.logTxt.Text = "";
             // 
@@ -79,10 +79,27 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txtPort);
             this.panel1.Controls.Add(this.txtHost);
-            this.panel1.Location = new System.Drawing.Point(12, 545);
+            this.panel1.Location = new System.Drawing.Point(12, 525);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(704, 41);
+            this.panel1.Size = new System.Drawing.Size(703, 41);
             this.panel1.TabIndex = 2;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(212, 3);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(29, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Nick";
+            // 
+            // TxtNick
+            // 
+            this.TxtNick.Location = new System.Drawing.Point(215, 17);
+            this.TxtNick.Name = "TxtNick";
+            this.TxtNick.Size = new System.Drawing.Size(100, 20);
+            this.TxtNick.TabIndex = 3;
+            this.TxtNick.Text = "Gracz";
             // 
             // btnDisconnect
             // 
@@ -138,34 +155,19 @@
             this.txtHost.TabIndex = 0;
             this.txtHost.Text = "127.0.0.1";
             // 
-            // TxtNick
-            // 
-            this.TxtNick.Location = new System.Drawing.Point(215, 17);
-            this.TxtNick.Name = "TxtNick";
-            this.TxtNick.Size = new System.Drawing.Size(100, 20);
-            this.TxtNick.TabIndex = 3;
-            this.TxtNick.Text = "Gracz";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(212, 3);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Nick";
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(728, 598);
+            this.ClientSize = new System.Drawing.Size(727, 578);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.logTxt);
             this.Controls.Add(this.tmpMap);
             this.DoubleBuffered = true;
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Brain-Blaster Client";
+            this.Resize += new System.EventHandler(this.MainForm_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.tmpMap)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

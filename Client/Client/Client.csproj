@@ -56,7 +56,9 @@
     <Compile Include="etc\PosSetting.cs" />
     <Compile Include="lib\classes\PowerUp.cs" />
     <Compile Include="lib\classes\Skill.cs" />
+    <Compile Include="lib\classes\skills\Bomb.cs" />
     <Compile Include="lib\classes\skills\Join.cs" />
+    <Compile Include="lib\classes\skills\KeyPress.cs" />
     <Compile Include="lib\classes\skills\Move.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>

@@ -17,6 +17,8 @@ namespace Client.lib.classes
     public class Player : IObject, IField
     {
 
+        public int ExplodeSize { get; set; }
+
         public RichTextBox txtLog { get; set; }
         public Form Form { get; set; }
 
@@ -35,6 +37,7 @@ namespace Client.lib.classes
         public Player(Map Map)
         {
             this.Map = Map;
+            ExplodeSize = 5;
         }
 
         #region IField Members
@@ -49,10 +52,11 @@ namespace Client.lib.classes
 
         public void Render()
         {
-            char n = Nick == null ? 'O' : Nick[0];
-
-            Map._Map.Rows[Y].Cells[X].Value = n;
-            Map._Map.Rows[Y].Cells[X].Style.BackColor = Color.Yellow;
+            if (Nick != null)
+            {
+                Map._Map.Rows[Y].Cells[X].Value = Nick[0];
+                Map._Map.Rows[Y].Cells[X].Style.BackColor = Color.Yellow;
+            }
         }
 
         public void Clear()
@@ -73,7 +77,6 @@ namespace Client.lib.classes
             this.Form = Form;
         }
 
-        //To jest do dupy przekazywanie richTextBoxa i Form do logowania tak nie moze byc
         //Trzeba by bylo sie zastanowic czy czasem to pobieranie id i wysylanie nicka innym nie da jako osobny skill
         //i tego skila opakowac w jakiegos wiekszego skilla ktory jeszcze by pobieral mape 
         public bool Connect(string Host, int Port)
@@ -102,7 +105,6 @@ namespace Client.lib.classes
                 string[] data;
 
                 buf = _readS.ReadString();
-
                 data = buf.Split('|');
 
                 if (data[0] == MsgS.SetID)
@@ -116,6 +118,16 @@ namespace Client.lib.classes
                     }
 
                     Map.AddPlayer(this);
+
+                    buf = _readS.ReadString();
+                    data = buf.Split('|');
+
+                    if (data[0] == MsgS.MapSetting)
+                    {
+                        Setting.Map.MaxX = int.Parse(data[1]);
+                        Setting.Map.MaxY = int.Parse(data[2]);
+                        Setting.Map.MaxPlayers = int.Parse(data[3]);
+                    }
 
                     WriteS.Write(MsgC.SetNick + "|" + Index.ToString() + "|" + Nick);
 

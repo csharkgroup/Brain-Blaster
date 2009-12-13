@@ -7,13 +7,10 @@
 
         public int MaxPlayers { get; set; }
 
-        public double Rate { get; set; }
-
-        public Map(int MaxX, int MaxY, double Rate)
+        public Map(int MaxX, int MaxY)
         {
             this.MaxX = MaxX;
             this.MaxY = MaxY;
-            this.Rate = Rate;
 
             this.MaxPlayers = 4;
         }

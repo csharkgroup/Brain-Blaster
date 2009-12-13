@@ -16,7 +16,7 @@ namespace Client.etc
 
         static Setting()
         {
-            Map = new Map(33, 18, 16 / 9);
+            Map = new Map(33, 18);
             Position = new Position(Map.MaxX, Map.MaxY);
             Net = new Net("127.0.0.1", 2610);
             Field = new Field(20, 20);

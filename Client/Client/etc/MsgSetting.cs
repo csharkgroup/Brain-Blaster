@@ -9,6 +9,7 @@ namespace Client.etc
 
         public const string Move = Prefix + "MOVE";
         public const string Disconnect = Prefix + "DISCONNECT";
+        public const string SetBomb = Prefix + "SETBOMB";
     }
 
     public class MsgS : Msg
@@ -16,6 +17,8 @@ namespace Client.etc
         public const string SetID = Prefix + "SETID";
         public const string GetNick = Prefix + "GETNICK";
         public const string Join = Prefix + "JOIN";
+        public const string MapSetting = Prefix + "MAPSIZE";
+        public const string Bomb = Prefix + "BOMB";
     }
 
     public class MsgC : Msg

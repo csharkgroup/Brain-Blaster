@@ -3,7 +3,7 @@
   <Class Name="Client.etc.Settings.Map" Collapsed="true">
     <Position X="5.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <HashCode>MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
       <FileName>etc\MapSetting.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -24,7 +24,7 @@
   <Class Name="Client.MainForm" Collapsed="true">
     <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAABAAAAKACGACAAAACJAAgMEAAQAAAAA=</HashCode>
+      <HashCode>AAAAAAAAACAAABAAAAKACGACAAAACJAAgMEAgQAAAAA=</HashCode>
       <FileName>MainForm.cs</FileName>
       <NewMemberFileName>MainFOrm.cs</NewMemberFileName>
     </TypeIdentifier>
@@ -62,7 +62,7 @@
   <Class Name="Client.lib.classes.Map" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="0.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAABkkAABAAAA=</HashCode>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAABkEACBAAAA=</HashCode>
       <FileName>lib\classes\Map.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -90,14 +90,14 @@
   <Class Name="Client.etc.Msg" Collapsed="true">
     <Position X="9" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAIAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAQAAAIAAIAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>etc\MsgSetting.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Client.etc.MsgS" Collapsed="true">
     <Position X="8.75" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAIAAAAAAAAAAgAAAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <HashCode>AAAIAAAAAAAAAIgAAAAAAAAAAAAAAAAAABAAAAAAAQA=</HashCode>
       <FileName>etc\MsgSetting.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -125,7 +125,7 @@
   <Class Name="Client.lib.classes.skills.Move">
     <Position X="7.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAQ=</HashCode>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>lib\classes\skills\Move.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -133,8 +133,38 @@
   <Class Name="Client.lib.classes.skills.Join">
     <Position X="5.75" Y="5.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAQ=</HashCode>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>lib\classes\skills\Join.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Client.etc.Settings.Field" Collapsed="true">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>etc\FieldSetting.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Client.etc.Setting" Collapsed="true">
+    <Position X="1.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAiAgIAAABAAAAABAAAAAQAAAAAAAgAA=</HashCode>
+      <FileName>etc\Settings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Client.lib.classes.skills.KeyPress">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>lib\classes\skills\KeyPress.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Client.lib.classes.skills.Bomb">
+    <Position X="9" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>lib\classes\skills\Bomb.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
@@ -169,7 +199,7 @@
   <Interface Name="Client.lib.interfaces.ISkill">
     <Position X="0.5" Y="5.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAQ=</HashCode>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>lib\interfaces\ISkill.cs</FileName>
     </TypeIdentifier>
   </Interface>
